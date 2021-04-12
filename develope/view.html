@@ -11,7 +11,9 @@
 <body>
     <div class="container">
         <div class="title">
-            <h1>Hot Restaurant</h1>
+            <div class="titleText">
+                <h1>Hot Restaurant</h1>
+            </div>
             <p>We only have 5 tables! Book your seat before they all are gone!</p>
             <div class="buttons"></div>
             <a class="waves-effect waves-light btn">View Tables</a>
@@ -19,18 +21,26 @@
         </div>
         <div class="currentReservation">
             <h2>Current Reservation</h2>
-            <div class="eachReservation">
-                <h3>Generate Data Here</h3>
+            <div class="reservationContainer">
+                <h3 class="tableNumber">Table #</h3>
             <ul>
-                <li class="reservationDetails" id="id">ID: </li>
-                <li class="reservationDetails" id="name">Name: </li>
-                <li class="reservationDetails"id="email">Email: </li>
-                <li class="reservationDetails"id="phone">Phone: </li>
+                <li class="reservationDetails" id="id"></li>
+                <li class="reservationDetails" id="name"></li>
+                <li class="reservationDetails"id="email"></li>
+                <li class="reservationDetails"id="phone"></li>
             </ul>
-
+            </div>
+            <div class="waitListContainer">
+                <h3 class="waitList">Wait List</h3>
+                <ul>
+                    <li class="waitDetails" id="waitID"></li>
+                    <li class="waitDetails" id="waitName"></li>
+                    <li class="waitDetails"id="waitEmail"></li>
+                    <li class="waitDetails"id="waitPhone"></li>
+                </ul>
             </div>
         </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
