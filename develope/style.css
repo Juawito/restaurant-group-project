@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    justify-content: center;
+}
+
+
+.title {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+.title p {
+    font-size: 2rem;
+}
+.buttons {
+    padding: 1rem 1rem;
+}
