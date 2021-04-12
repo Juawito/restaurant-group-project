@@ -21,3 +21,16 @@
 .buttons {
     padding: 1rem 1rem;
 }
+
+.currentReservation {
+    border: solid 2px black;
+    padding: 0 0;
+    margin: 0 0 ;
+}
+.eachReservation {
+    border: solid 2px black;
+}
+
+.reservationDetails {
+    font-size: 2rem;
+}
