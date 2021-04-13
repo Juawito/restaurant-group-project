@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .container {
     justify-content: center;
 }
@@ -13,7 +12,6 @@
     text-align: center;
     padding: 2rem 0;
 }
-
 .titleText {
     background-color: black;
     color: rgb(187, 186, 186);
@@ -35,7 +33,6 @@
     border: solid 2px black;
     margin: 1rem;
 }
-
 .reservationDetails {
     font-size: 2rem;
 }
