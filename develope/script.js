@@ -1,13 +1,25 @@
 // Reservation Page
+class NewReservation{
+    constructor(id, phoneNum, email, name){
+        this.id = id;
+        this.phoneNumber = phoneNum;
+        this.email = email;
+        this.name = name;
+        this.routeName = '';
+    }
+}
 $(".submit").on("click", function(event) {
     event.preventDefault();
+    let rand = Math.floor(Math.random() * 100);
+    console.log(rand);
+    let reserveName = $('#reserveName');
+    let reservePhone = $('#reservePhone');
+    let reserveEmail = $('#reserveEmail');
+    let reserveId = rand;
+
+    const newTable = NewReservation(reserveId, reservePhone, reserveEmail, reserveName);
+
 })
-var newReservation = {
-    reserveName: $("#reserveName"),
-    reserevePhone: $("#reservePhone"),
-    reserveEmail: $("#reservemail"),
-    reserveNickname: $("#reserveNickname"),
-};
 
 console.log (newReservation)
 
@@ -22,7 +34,6 @@ $("#reservePhone").val("");
 $("#reservemail").val("");
 $("#reserveNickname").val("");
 
-});
 
 // View Page
 
@@ -35,7 +46,7 @@ var listItem = $("<li class='reservationDetails'>");
 reservationDetails.append (
         $("h3").text("Table" + (i+1)),
         $("hr"),
-        $("li").text("ID:" + tableData[i].reserveNickname),
+        $("li").text("ID:" + tableData[i].id),
         $("li").text("Name:" + tableData[i].reserveName),
         $("li").text("Email:" + tableData[i].reserveEmail),
         $("li").text("Phone:" + tableData[i].reservePhone),
