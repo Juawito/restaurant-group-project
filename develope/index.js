@@ -35,4 +35,19 @@ app.get('/api/waitlist/:waitlist', (req, res) => {
     return res.json(false);
 })
 
+app.post('/api/tables', (req, res) => {
+    const newReservation = req.body;
+    if (reservations.length < 5) {
+        newReservation.routeName = newReservation.name.replace(/\s+/g, '').toLowerCase();
+    
+        reservations.push(newReservation);
+        return res.json(true);
+        
+    } else {
+        newReservation.routeName = newReservation.name.replace(/\s+/g, '').toLowerCase();
+        waitlist.push(newReservation);
+        return res.json(false)
+    }
+
+})
 app.listen(PORT, () => console.log(`App listening on port ${PORT}`));
