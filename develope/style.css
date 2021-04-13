@@ -12,10 +12,7 @@
     text-align: center;
     padding: 2rem 0;
 }
-.titleText {
-    background-color: black;
-    color: rgb(187, 186, 186);
-}
+
 .title p {
     font-size: 2rem;
 }
